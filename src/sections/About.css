@@ -1,0 +1,120 @@
+.about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.about__bio {
+    padding: 36px;
+}
+
+.about__bio p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+.about__bio p:last-of-type {
+    margin-bottom: 30px;
+}
+
+.about__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-glass);
+}
+
+.about__stat {
+    text-align: center;
+}
+
+.about__stat-number {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.about__stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Skills */
+.about__skills {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about__skill-group {
+    padding: 24px;
+}
+
+.about__skill-category {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about__skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about__skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.about__skill-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.about__skill-percent {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+.about__skill-bar {
+    height: 4px;
+    background: rgba(124, 58, 237, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.about__skill-fill {
+    height: 100%;
+    background: var(--gradient-text);
+    border-radius: 2px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about__stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+
+    .about__stat-number {
+        font-size: 1.4rem;
+    }
+}

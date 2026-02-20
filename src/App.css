@@ -1,0 +1,6 @@
+/* App-level layout overrides */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
